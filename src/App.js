@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar brand="Rick and morty app" />
-      <div className="container">
+      <div className="container mt-5">
         <Characters characters={characters} />
       </div>
     </>

@@ -4,9 +4,16 @@ const Characters = ({ characters = [] }) => {
   return (
     <div className="row">
       {characters.map((item, index) => (
-        <div key={index} className="col">
-          <div className="card">
+        <div key={index} className="col mb-4">
+          <div className="card" style={{ maxWidth:"250px"}}>
             <img src={item.image} alt="" />
+            <div className="card-body">
+              <h5 className="card-title">{item.name}</h5>
+              <hr/>
+              <p>Origin: {item.origin.name}</p>
+              <p>Location: {item.location.name}</p>
+              <p>Species: {item.species}</p>
+            </div>
           </div>
         </div>
       ))}
