@@ -5,7 +5,7 @@ const Characters = ({ characters = [] }) => {
     <div className="row">
       {characters.map((item, index) => (
         <div key={index} className="col mb-4">
-          <div className="card" style={{ maxWidth:"250px"}}>
+          <div className="card" style={{ minWidth:"200px"}}>
             <img src={item.image} alt="" />
             <div className="card-body">
               <h5 className="card-title">{item.name}</h5>
